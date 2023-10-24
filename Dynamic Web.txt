@@ -98,6 +98,20 @@ _ thẻ head chứa tiêu đề trang, mô tả trang, từ khóa, thông tin t�
  *) đường dẫn tương đối và đường dẫn tuyệt đối
  bản chất của web là sẽ tìm file index.html
  thư mục ảnh: ko thay đổi sẽ dùng đường dẫn tuyệt đối
+ Setting trong github => Setting => Page=> main
+ Tab Action
+ 
+ Trên VS => Setting=> Select default profile => Git bash
+ git init: khởi tạo 1 kho lưu trữ git mới trên local
+ git config --global user.email ""
+ git config -global user.name ""
+ git commit -m "first commit"
+ // sửa đổi nhánh chính 
+ git branch -M master
+ git remote add origin https://
+ git push -u orgin master
+ 
+
  
  
 
