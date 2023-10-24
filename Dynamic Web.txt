@@ -33,7 +33,7 @@ _ <!DOCTYPE html> : html5
 _ <html lang="vi"></html> (search ma ngon ngu tren google)
 _ thẻ head chứa tiêu đề trang, mô tả trang, từ khóa, thông tin tác giả, các tệp tin css và js liên kết với trang
 (tối ưu công cụ tìm kiếm)
- demo nhanh trang web (lorem9: 9 kí tự)
+ demo nhanh trang web 
  *)
  thẻ body: chứa nội dung chính của trang web bao gồm phần tử như văn bản, hình ảnh, đoạn mã js, các phần tử định dạng
  _ thẻ h: h1 -> h6: định nghĩa tiêu đề của trang web
@@ -49,5 +49,55 @@ _ thẻ head chứa tiêu đề trang, mô tả trang, từ khóa, thông tin t�
  _ thẻ ol - ordered list: danh sách có thứ tự
  
  (chỉ sử dụng 1 lần thẻ h1 trên 1 trang web)
+ 
+ vào Setting -> tìm wait => 3s
+ Setting -> full reload => tích
+ Giữ Alt nhấn
+ giữ alt và bôi đen, sau đó ấn alt + w
+ 
+ thẻ p:
+ 
+ (lorem9: 9 kí tự)
+ (lorem*3: 3 dòng)
+ lorem  + tab: 30 từ
+ 
+ - thẻ br: break: ngắt dòng (self-closing tag: thẻ tự đóng)
+ - thẻ hr: horizontal rule: tạo đường kẻ ngang ngăn cách trên trang 
+ - thẻ u, i, p
+ thẻ b, thẻ i: không mang ngữ nghĩa, chỉ đơn thuẩn là in đậm, in nghiêng giúp người đọc chú ý
+ thẻ strong, thẻ em: có mang ngữ nghĩa, trình duyệt sẽ cho rằng đây là nội dung quan trọng (strong) và nội dung cần được nhấn mạnh (em) ngoài sự gây chú ý
+=> hỗ trợ việc seo, screen reader sẽ nhấn mạnh 
+
+ _ thẻ ul - un-ordered list: danh sách không có thứ tự
+ _ thẻ ol - ordered list: danh sách có thứ tự
+ _ thẻ li - list: là thẻ con trực tiếp của ul, ol
+ 
+ ol: có 2 thuộc tính
+ _ reversed: đảo ngược: 
+ _ type 
+ 
+ *) Tìm hiểu thẻ ul, ol, li lồng nhau
+ ul>li*4{item$}
+ 
+ *) thẻ a: anchor - gắn kèm liên kết, email, phone
+  href: hypertext reference
+ href="": tải lại trang, href="#": về đầu trang
+  nếu ko nhập gì hiểu target="_seft"
+
+ sử dụng tel để liên kết số điện thoại: href="tel:0123456789"
+ mailto: liên kết tới email href="mailto:kyuc.vunvo@gmail.com"
+ gõ lên trình duyệt thì nó vẫn sẽ như thế
+ 
+ *) thẻ img: là thẻ dự đóng
+ src: source image file
+ alt: alternative- thay thế
+ - hiển thị text khi link ảnh lỗi
+ - hỗ trợ đọc màn hình
+ - hỗ trợ cộng cụ tìm kiếm thu nhập trên trang
+ 
+ *) đường dẫn tương đối và đường dẫn tuyệt đối
+ bản chất của web là sẽ tìm file index.html
+ thư mục ảnh: ko thay đổi sẽ dùng đường dẫn tuyệt đối
+ 
  
 

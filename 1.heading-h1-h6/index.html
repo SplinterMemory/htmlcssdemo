@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- _ thẻ h: h1 -> h6: định nghĩa tiêu đề của trang web
+    h1: thẻ tiêu đề lớn nhất và quan trọng nhất
+    h6: thẻ tiêu đề nhỏ nhất và ít quan trọng nhất -->
+    <h1>Anh hùng xạ điêu</h1>
+    <h2>Chương 1</h2>
+    <h3>Phần 1</h3>
+    <h3>Phần 2</h3>
+    <h2>Chương 2</h2>
+    <h3>Phần 1</h3>
+    <h4>Tóm tắt chương 1</h4>
+    <h2>Chương 3</h2>
+    <h3>Phần 1</h3>
+    <h3>Phần 2</h3>
+    <hr />
+    <!-- _ thẻ p: paragraph chứa đoạn văn bản -->
+    <!-- lorem  + tab: 30 từ -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim officia
+      unde quidem dolorem aspernatur minus in explicabo dolores quos sit
+      mollitia quibusdam magnam laboriosam corporis, veniam maiores, quam odit
+      a.
+    </p>
+    <!-- (lorem9: 9 kí tự) -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit!</p>
+    <!-- (lorem*3: 3 dòng, mỗi dòng 30 kí tự) -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+      provident dicta rem perferendis consequatur id sapiente praesentium
+      molestiae ab amet est voluptas esse repudiandae, quasi aperiam autem.
+      Deserunt, sapiente nisi! Iure qui itaque quas perferendis, saepe dolore,
+      aliquid distinctio nostrum repellendus similique ad hic. Dolorem,
+      exercitationem dolor. Sit pariatur rem doloremque, labore ad ut incidunt
+      atque, ab, distinctio quia vel. Vel facere maxime magni laboriosam
+      maiores, similique cupiditate. Error inventore a quo? Alias optio, fuga
+      rem mollitia nihil quae officiis vitae illum tempora explicabo excepturi,
+      iure sit autem obcaecati reprehenderit!
+    </p>
+    <hr />
+    <!-- the br -->
+    Lorem ipsum dolor sit amet.<br />
+    Lorem ipsum dolor sit amet.<br />
+    Lorem ipsum dolor sit amet.<br />
+    Lorem ipsum dolor sit amet.<br />
+    Lorem ipsum dolor sit amet.
+    <hr />
+    <!-- _ thẻ b: bold (strong)
+    _ thẻ i: italic (em: emphasis: nhấn mạnh nội dung)
+    _ thẻ u: underline -->
+    <p>
+      Lorem ipsum, <b>dolor sit amet</b> consectetur
+      <strong>adipisicing elit</strong>. Unde doloribus dolor numquam aut
+      <em>suscipit perspiciatis</em> magnam ad quia quaerat blanditiis nemo
+      voluptas molestias maxime laborum nobis voluptatibus, cumque harum!
+      Temporibus. Reprehenderit distinctio asperiores blanditiis mollitia labore
+      <i>iusto libero</i> officia dolorum culpa atque sequi, accusantium magnam
+      aperiam dicta perspiciatis magni a iste, veritatis, nostrum placeat
+      doloremque harum corrupti quaerat. Velit, impedit? Qui cumque facere velit
+      earum <u>autem dicta molestias porro</u>, error, minima,
+      <u
+        ><i><b>veritatis accusantium iure</b></i></u
+      >
+      repellendus corporis adipisci alias ab iste provident laboriosam! Quasi,
+      error praesentium quae ea nisi laborum cumque!
+    </p>
+    <hr />
+    <!-- _ thẻ ul - un-ordered list: danh sách không có thứ tự
+    _ thẻ ol - ordered list: danh sách có thứ tự
+    _ thẻ li - list: là thẻ con trực tiếp của ul, ol -->
+    <h1>How to luộc trứng</h1>
+    <h2>Nguyên liệu</h2>
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+      <li>Item4</li>
+    </ul>
+    <h2>Cách chế biến</h2>
+    <ol>
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+    </ol>
+    <!-- ul>li: tạo 1 thẻ ul chứa 1 phần tử li-->
+    <!-- ul>li*5: tạo 1 thẻ ul chứa 5 phần tử li-->
+    <!-- ol>li*7: tạo 1 thẻ ol chứa 7 phần tử li-->
+    <!-- ul>li*4{item$} item chạy từ 1 đến 4-->
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+    <!-- ol: có 2 thuộc tính
+    _ reversed: đảo ngược: 
+    _ type  -->
+    <ol reversed type="A">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ol>
+    <hr />
+    <!-- Tìm hiểu thẻ ul, ol, li lồng nhau -->
+    <ol type="I">
+      <li>Mở bài: Lorem ipsum dolor sit amet.</li>
+      <li>
+        Thân bài: Lorem ipsum dolor sit.
+        <ol>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>
+            Lorem ipsum dolor sit amet.
+            <ol type="a">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>Kết bài: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ol>
+
+    <ul>
+      <li>Menu item 1</li>
+      <li>
+        Menu item 2
+        <ol type="I">
+          <li>Menu item 2.1</li>
+          <li>
+            Menu item 2.2
+            <ol type="a">
+              <li>Menu item 2.2.1</li>
+              <li>Menu item 2.2.2</li>
+              <li>Menu item 2.2.3</li>
+            </ol>
+          </li>
+          <li>Menu item 2.3</li>
+          <li>Menu item 2.4</li>
+        </ol>
+      </li>
+      <li>Menu item 3</li>
+      <li>Menu item 4</li>
+    </ul>
+    <hr />
+    <!-- thẻ a: anchor - gắn kèm liên kết, email, phone -->
+    <!-- href="": tải lại trang, href="#": về đầu trang-->
+    <!-- nếu ko nhập gì hiểu target="_seft" -->
+    <a href="https://google.com.vn" target="_blank">Click vào đây</a><br />
+    <!-- liên kết tới số điện thoại -->
+    <a href="tel:0982346006">0982346006</a><br />
+    <!-- liên kết tới email -->
+    <a href="mailto:kyuc.vunvo@gmail.com">kyuc.vunvo@gmail.com</a>
+    <!-- thêm dấu ? -->
+    <a
+      href="mailto:kyuc.vunvo@gmail.com?cc=a@domain.com,b@domain.com&subject=Hi&Bcc=d@domain.com&body=Hi, tu dong nhe"
+      >Gửi email</a
+    >
+    <hr />
+    <h1>Hình ảnh</h1>
+    <!-- src: source image file
+    alt: alternative- thay thế -->
+    <img
+      src="img/majid-akbari.jpg"
+      alt="Hình ảnh"
+      width="200px"
+      height="200px"
+    />
+  </body>
+</html>
