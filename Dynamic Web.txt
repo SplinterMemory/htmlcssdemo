@@ -1,0 +1,53 @@
+Web tĩnh, Web động
+_ web tĩnh: không có bất kì thay đổi nào trên trang web này
+_ web động: nội dung được update ontime (update liên tục và phản hồi ontime với người dùng)
+
+
+ấn !tab: sẽ gen ra file html
+File => Add Folder To WorkSpace
+Setting -> tìm format on save => format on save
+Setting -> tìm default formatter -> tìm prettier
+Setting -> tìm auto save => on focus change
+cài extension Prettier
+cài extension Material Icon Theme
+extension image preview: hiển thị ảnh nhỏ
+color hightlight: hiển thị màu sắc
+auto rename tag
+live server: tự động mở trang web
+live server preview: mở trang web => F1 => chọn show live server preview
+code spell checker
+vietnam code spell checker => F1 => Show Spell Checker Configuration Info
+html tag wrap: chèn thêm 1 thẻ vào 1 khối có sẵn: Alt W
+html to css autocompletion: nếu đã có class được định nghĩa file html thì ở file css sẽ gợi ý
+
+html: không phải ngôn ngữ lập trình
+đánh dấu các nội dùng văn bản: paragraphs: đoạn văn
+links: liên kết, heading: tiêu đề, images: hình ảnh
+html(hypertext markup languague: ngôn ngữ đánh dấu siêu văn bản)
+css(cascading style sheets): ngôn ngữ định dạng trang web
+js(javascript): các thao tác trên văn bản
+
+cấu trúc 1 tệp html: DOCTYPE, thẻ html, thẻ head, thẻ body
+thẻ tự đóng
+_ <!DOCTYPE html> : html5
+_ <html lang="vi"></html> (search ma ngon ngu tren google)
+_ thẻ head chứa tiêu đề trang, mô tả trang, từ khóa, thông tin tác giả, các tệp tin css và js liên kết với trang
+(tối ưu công cụ tìm kiếm)
+ demo nhanh trang web (lorem9: 9 kí tự)
+ *)
+ thẻ body: chứa nội dung chính của trang web bao gồm phần tử như văn bản, hình ảnh, đoạn mã js, các phần tử định dạng
+ _ thẻ h: h1 -> h6: định nghĩa tiêu đề của trang web
+ h1: thẻ tiêu đề lớn nhất và quan trọng nhất
+ h6: thẻ tiêu đề nhỏ nhất và ít quan trọng nhất
+ _ thẻ p: paragraph chứa đoạn văn bản
+ _ thẻ b: bold (strong)
+ _ thẻ i: italic (em: emphasis: nhấn mạnh nội dung)
+ _ thẻ u: underline
+ _ thẻ a: anchor - gắn kèm đường dẫn
+ _ thẻ img: image
+ _ thẻ ul - un-ordered list: danh sách không có thứ tự
+ _ thẻ ol - ordered list: danh sách có thứ tự
+ 
+ (chỉ sử dụng 1 lần thẻ h1 trên 1 trang web)
+ 
+
