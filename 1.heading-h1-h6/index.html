@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Step 1: Copy trước thẻ </head> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
   </head>
   <body>
     <!-- _ thẻ h: h1 -> h6: định nghĩa tiêu đề của trang web
@@ -172,5 +177,85 @@
       width="200px"
       height="200px"
     />
+    <hr />
+    <!-- tạo kí tự đặc biệt -->
+    <p>Chúng ta sử dụng thẻ &lt;h1&gt;&lt;/h1&gt; để đặt tiêu đề</p>
+    <p>&copy; &#169; © copyright</p>
+    <!-- với trang web sử dụng mã kí tự utf8 thì kí tự đặc biệt có thể hiển thị ngay mà ko cần html entities -->
+    <hr />
+    <!-- pre: preformatted: dùng để giữ nguyên định dạng văn bản trong trình soạn thảo code
+ vd: khoảng trắng dư thừa, tab thụt vào đầu dòng -->
+    <!--thay thẻ p bằng thẻ pre-->
+    <p>Quanh năm buôn bán ở mom sông</p>
+    <pre>Quanh năm   buôn bán    ở mom sông</pre>
+    <hr />
+    <!-- thẻ code: là 1 thẻ có ngữ nghĩa
+ sử dụng khi có 1 đoạn code => trình duyệt sẽ hiểu đây là 1 đoạn code -->
+    <!-- gõ tìm kiếm codebeauty => codebeauty.org => gõ html escape unescape -->
+    <!-- vào web chuyển đổi đoạn code thành kí tự-->
+    <!-- sử dụng thêm thẻ pre để giữ nguyên định dạng -->
+    <h1>Code trước khi hightlight</h1>
+    <p>
+      Em đang học thẻ
+      <code>&lt;strong&gt;&lt;/strong&gt;</code> và thẻ
+      <code>&lt;em&gt;&lt;/em&gt;</code>
+    </p>
+    <pre><code>
+    &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot; /&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    </code></pre>
+    <a href="https://prismjs.com/" target="_blank">Link thư viện PrismJS</a>
+    <h1>Code sau khi hightlight</h1>
+    <!--thêm css vào thẻ head, thêm class language-html và thêm js vào trước thẻ đóng body-->
+    <p>
+      Em đang học thẻ
+      <code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code> và thẻ
+      <code class="language-html">&lt;em&gt;&lt;/em&gt;</code>
+    </p>
+    <pre><code  class="language-html">
+    &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot; /&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    </code></pre>
+    <hr />
+    <!--làm việc với table-->
+    <!--th: table head, tr: table row, td: table data-->
+    <!-- thead: table header: phần đầu của bảng, chứa th
+  tbody: table body: phần thân của bảng chứa tr, td
+  tfoot: table footer: phần cuối của bảng: ô chú thích, tổng kết hoặc thông ti
+  hỗ trợ tốt công cụ tìm kiếm trang
+ -->
+    <h3>Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sp</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Áo Phông</td>
+          <td>100000 VNĐ</td>
+        </tr>
+        <tr>
+          <td>Quần Jean</td>
+          <td>100000 VNĐ</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Tổng cộng</td>
+          <td>200000 VNĐ</td>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>
 </html>

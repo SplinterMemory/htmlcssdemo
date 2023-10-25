@@ -99,19 +99,72 @@ _ thẻ head chứa tiêu đề trang, mô tả trang, từ khóa, thông tin t�
  bản chất của web là sẽ tìm file index.html
  thư mục ảnh: ko thay đổi sẽ dùng đường dẫn tuyệt đối
  Setting trong github => Setting => Page=> main
- Tab Action
+ Tab Action => deploy
  
+ *) Ôn lại git
  Trên VS => Setting=> Select default profile => Git bash
  git init: khởi tạo 1 kho lưu trữ git mới trên local
  git config --global user.email ""
  git config -global user.name ""
+ git add README.md
  git commit -m "first commit"
  // sửa đổi nhánh chính 
- git branch -M master
+ git branch -M main
  git remote add origin https://
- git push -u orgin master
+ git push -u orgin main
  
+ vscode add ở trên cùng: add hết
+ dấu... chọn push
+ 
+ git branch -all: lấy cả nhánh ở máy vật lý, lẫn remote (máy chủ) = git branch -a
+ git branch -c congviec1 (lấy code ở main sang congviec1), con trỏ ko tự nhảy sang congviec1
+ git checkout -b congviec2 và con trỏ nhảy sang congviec2
+ 
+ git push -u origin congviec1: đẩy lên remote = git push -set-upstream origin congviec1
+ (chỉ cần sử dụng lần đầu tiên, từ đó git tạo liên kết congviec1 trên local và trên máy chủ git)
+ 
+ sau chỉ cần dùng git push là xong
+ 
+ (xóa trên máy tính)
+ xóa nhánh: git branch -d congviec1
+ git branch -D congviec1: ép xóa(khi vẫn có commit)
+ 
+ (xóa trên remote)
+ git push -d orgin congviec1
+ 
+ git log --oneline (id + message)
+ git checkout (id lấy được từ lệnh trên)
+ 
+ *) 
+tạo kí tự đặc biệt: vào google gõ html entities list
+với trang web sử dụng mã kí tự utf8 thì kí tự đặc biệt có thể hiển thị ngay mà ko cần html entities
+ 
+ *) tìm hiểu thẻ pre: preformatted: dùng để giữ nguyên định dạng văn bản trong trình soạn thảo code
+ vd: khoảng trắng dư thừa, tab thụt vào đầu dòng
+ 
+ *) thẻ code: là 1 thẻ có ngữ nghĩa
+ sử dụng khi có 1 đoạn code => trình duyệt sẽ hiểu đây là 1 đoạn code
+ gõ tìm kiếm codebeauty => codebeauty.org => gõ html escape unescape
+ sử dụng thêm thẻ pre
+ 
+ *) sử dụng plugin để làm đẹp thẻ code: primjs
+ _ thêm link css
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+	 _ thêm class = languague-html
+_ thêm đoạn code js trước thẻ đóng body
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>	
+	
+	*) tìm hiểu về html table
+search từ khóa html table basics	
+th: table head, tr: table row, td: table data
+thead: table header: phần đầu của bảng, chứa th
+tbody: table body: phần thân của bảng chứa tr, td
+tfoot: table footer: phần cuối của bảng: ô chú thích, tổng kết hoặc thông tin cuối cùng về bảng
+=> hỗ trợ tốt công cụ tìm kiếm trang
 
- 
  
 
