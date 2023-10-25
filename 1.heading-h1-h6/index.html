@@ -255,6 +255,66 @@
         </tr>
       </tfoot>
     </table>
+    <hr />
+    <!--colspan, rowspan
+colspan: chỉ định phần tử chiếm bao nhiêu cột
+rowspan: chỉ định phần tử chiếm bao nhiêu hàng-->
+    <table>
+      <tr>
+        <th>Tên sản phẩm</th>
+        <th colspan="2">Mô tả</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Áo Phông</td>
+        <td>Chất liệu</td>
+        <td>Bạt</td>
+      </tr>
+      <tr>
+        <td>Kích thước</td>
+        <td>M, L, XL</td>
+      </tr>
+      <tr>
+        <td>Quần jean</td>
+        <td colspan="2">Quần Jean cao cấp dễ dàng phối đồ</td>
+      </tr>
+    </table>
+    <!--table bài tập-->
+
+    <table>
+      <!--thead>tr>th*3-->
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá sản phẩm</th>
+          <th>Số lượng còn lại</th>
+        </tr>
+      </thead>
+      <!--tbody>tr*3>th*3-->
+      <tbody>
+        <tr>
+          <td>Áo Thun Nam</td>
+          <td>100.000VNĐ</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Quần Jean Nữ</td>
+          <td>200.000VNĐ</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Giẩy Thể Thao</td>
+          <td>300.000VNĐ</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+      <!--tfoot>tr>td*2-->
+      <tfoot>
+        <tr>
+          <td>Remark</td>
+          <td colspan="2">Chỉ thống kê sản phẩm trong kho</td>
+        </tr>
+      </tfoot>
+    </table>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
   </body>

@@ -113,6 +113,9 @@ _ thẻ head chứa tiêu đề trang, mô tả trang, từ khóa, thông tin t�
  git remote add origin https://
  git push -u orgin main
  
+ nếu đã có sẵn nhánh
+ git pull origin main
+ 
  vscode add ở trên cùng: add hết
  dấu... chọn push
  
@@ -165,6 +168,13 @@ thead: table header: phần đầu của bảng, chứa th
 tbody: table body: phần thân của bảng chứa tr, td
 tfoot: table footer: phần cuối của bảng: ô chú thích, tổng kết hoặc thông tin cuối cùng về bảng
 => hỗ trợ tốt công cụ tìm kiếm trang
+
+*) colspan, rowspan
+colspan: chỉ định phần tử chiếm bao nhiêu cột
+rowspan: chỉ định phần tử chiếm bao nhiêu hàng
+dùng thead>tr>th*3
+tbody>tr*3>th*3
+tfoot>tr>td*2
 
  
 
